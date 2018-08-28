@@ -1,0 +1,882 @@
+<!--Grid-template-->
+<div>
+  <div class="header-title">
+    <h1 class="d-inline">Slides</h1>
+    <button type="button" class="btn btn-round-lg bg-red-color text-white ml-4" data-toggle="modal" data-target="#newSlide">
+      <i class="fa fa-plus"></i> New Slide
+    </button>
+    
+  </div>
+  <br />
+  <div class="btn-toolbar float-left" role="toolbar">
+    <div class="btn-group mr-2" role="group">
+      <button type="button" class="btn btn-outline-dark btn-sm">Name</button>
+    </div>
+    <div class="btn-group mr-2" role="group">
+      <button type="button" class="btn btn-outline-dark btn-sm">Slides Type</button>
+    </div>
+    <div class="btn-group mr-2" role="group">
+      <button type="button" class="btn btn-outline-dark btn-sm">Equip Type</button>
+    </div>
+    <div class="btn-group mr-2" role="group">
+      <button type="button" class="btn btn-outline-dark btn-sm">Equip Sub Type</button>
+    </div>
+    <div class="btn-group mr-2" role="group">
+      <button type="button" class="btn btn-outline-dark btn-sm">Date</button>
+    </div>
+    <div class="btn-group mr-2" role="group">
+      <button type="button" class="btn btn-outline-dark btn-sm">Other Filters</button>
+    </div>
+    <div class="btn-group mr-2" role="group">
+      <button type="button" class="btn btn-outline-dark btn-sm">Reset Filter</button>
+    </div>
+  </div>
+  <div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs float-right">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#slides-list">
+          <i class="fa fa-th-list" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#slides">
+          <i class="fa fa-th-large" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="slides-list" class="tab-pane active">
+  
+        <table class="table" width="100%">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Date</th>
+              <th scope="col">Slides Type</th>
+              <th scope="col">Equipment Type</th>
+              <th scope="col">Equipment Sub Type</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-toggle="modal" data-target=".SlidePresentation" *ngFor="let option of Slides">
+              <td scope="row"><i class="fa fa-image"></i> {{option.name}}</td>
+              <td> {{option.date}}</td>
+              <td>{{option.SlideType}}</td>
+              <td>{{option.EquipmentType}}</td>
+              <td>{{option.EquipmentSubType}}</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="slides" class="tab-pane fade">
+        <table class="table" width="100%">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Date</th>
+              <th scope="col">Slides Type</th>
+              <th scope="col">Equipment Type</th>
+              <th scope="col">Equipment Sub Type</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+        </table>
+        <div class="row text-center text-lg-left ml-1">
+          <div class="col-md-4 mb-5">
+            <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+            <div class="caption ml-2">
+              <h4>Slides 1</h4>
+              <p>
+                <i class="fa fa-clock-o mr-1"></i>
+                <small> Effective: 10/12/2018 - 10/12/2018 </small>
+              </p>
+              <div class="row ml-1">
+                <div class="mr-2">
+                  <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                </div>
+                <div class="mr-2">
+                  <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                </div>
+                <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+            <div class="caption ml-2">
+              <h4>Slides 1</h4>
+              <p>
+                <i class="fa fa-clock-o mr-1"></i>
+                <small> Effective: 10/12/2018 - 10/12/2018 </small>
+              </p>
+              <div class="row ml-1">
+                <div class="mr-2">
+                  <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                </div>
+                <div class="mr-2">
+                  <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                </div>
+                <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+            <div class="caption ml-2">
+              <h4>Slides 1</h4>
+              <p>
+                <i class="fa fa-clock-o mr-1"></i>
+                <small> Effective: 10/12/2018 - 10/12/2018 </small>
+              </p>
+              <div class="row ml-1">
+                <div class="mr-2">
+                  <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                </div>
+                <div class="mr-2">
+                  <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                </div>
+                <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+            <div class="caption ml-2">
+              <h4>Slides 1</h4>
+              <p>
+                <i class="fa fa-clock-o mr-1"></i>
+                <small> Effective: 10/12/2018 - 10/12/2018 </small>
+              </p>
+              <div class="row ml-1">
+                <div class="mr-2">
+                  <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                </div>
+                <div class="mr-2">
+                  <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                </div>
+                <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+            <div class="caption ml-2">
+              <h4>Slides 1</h4>
+              <p>
+                <i class="fa fa-clock-o mr-1"></i>
+                <small> Effective: 10/12/2018 - 10/12/2018 </small>
+              </p>
+              <div class="row ml-1">
+                <div class="mr-2">
+                  <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                </div>
+                <div class="mr-2">
+                  <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                </div>
+                <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+            <div class="caption ml-2">
+              <h4>Slides 1</h4>
+              <p>
+                <i class="fa fa-clock-o mr-1"></i>
+                <small> Effective: 10/12/2018 - 10/12/2018 </small>
+              </p>
+              <div class="row ml-1">
+                <div class="mr-2">
+                  <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                </div>
+                <div class="mr-2">
+                  <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                </div>
+                <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <ul class="pagination mx-auto text-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">«</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">»</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--SlidePresentation Modal-->
+<!-- <div class="modal fade SlidePresentation">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content overflow-y">
+      <div class="modal-body popup-conatiner">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="popup-conatiner">
+          <img src="assets/Images/Foutain.png" class="rounded">
+          <div>
+            <button type="button" class="btn btn-danger btn-round-lg mr-2 mt-3 mb-3">
+              <i class="fa fa-plus"></i> Upload
+            </button>
+            <button type="button" class="btn btn-danger btn-round-lg mr-2 mt-3 mb-3" data-toggle="modal" data-target="#hotspotModal">Create Hotspots</button>
+            <button type="button" class="btn btn-danger btn-round-lg mt-3 mb-3" data-toggle="modal" data-target=".BrandModal">Map Brands</button>
+          </div>
+          <div class="border-dark border-bottom mb-2">
+            <h3>Fountain</h3>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <label>
+                <strong> Effective Start Date </strong>
+              </label>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label>
+                <strong> Effective End Date </strong>
+              </label>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label>
+                <strong> Slide Type </strong>
+              </label>
+              <div>
+                <select class="form-control">
+                  <option>Element Asset</option>
+                  <option>Element Non Asset</option>
+                  <option>Non Element</option>
+                  <option>Promotional Item</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label>
+                <strong>Equipment Type</strong>
+              </label>
+              <div>
+                <select class="form-control">
+                  <option>Vender</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label>
+                <strong> Equipment Sub Type </strong>
+              </label>
+              <div>
+                <select class="form-control">
+                  <option>Glass Font Vender (5x9)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label>
+                <strong>Equipment Group</strong>
+              </label>
+              <div>
+                <select class="form-control">
+                  <option>Large Capacity Glass Front</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label>
+                <strong>Brand Market</strong>
+              </label>
+              <div>
+                <select class="form-control">
+                  <option>Standard</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label>
+                <strong> Accessories</strong>
+              </label>
+              <div>
+                <select class="form-control">
+                  <option>Credit Card Reader</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label>
+                <strong> Tags </strong>
+              </label>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 mb-4">
+            <h3>
+              Brands
+              <span class="text-danger"> Edit</span>
+            </h3>
+          </div>
+          <div class="row mt-3 mb-3">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+              <span class="small">Add Brand</span>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+              <span class="small">Add Brand</span>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+              <span class="small">Add Brand</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+              <span class="small">Add Brand</span>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+              <span class="small">Add Brand</span>
+            </div>
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+              <span class="small">Add Brand</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group mr-2 float-right">
+          <button type="button" class="btn btn-lg btn-outline-dark">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  -->
+
+<!--New Slide-->
+<div class="modal" id="newSlide">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body popup-conatiner">
+        <button type="button" class="close btn-round-lg" data-dismiss="modal" (click)="isElement = !isElement" >&times;</button>
+      <!--1st pop up details-->
+        <div  *ngIf="!isElement">
+            <img src="assets/Images/Upload.jpg" class="rounded w-25" alt="Upload">
+            <div class="btn-toolbar" role="toolbar">
+              <div class="btn-group mr-2" role="group">
+                <button type="button" class="btn btn-round-lg bg-red-color text-white d-inline px-2 btn-sm my-3">Upload</button>
+              </div>
+              <div class="btn-group mr-2" role="group">
+                <button type="button" class="btn btn-round-lg bg-red-color text-white d-inline px-2 btn-sm my-3">Create Hotspots</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group form-group-sm col-sm-4">
+                <label for="first_name" class="col-form-label">Name</label>
+                <div>
+                  <input type="text" class="form-control" id="first_name" name="first_name">
+                </div>
+              </div>
+              <div class="form-group form-group-sm col-sm-4">
+                <label for="last_name" class="col-form-label">Label</label>
+                <div>
+                  <input type="text" class="form-control " id="last_name" name="last_name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group form-group-sm col-md-4">
+                <label class="col-form-label">Effective Start Date</label>
+                <div>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+              <div class="form-group form-group-sm col-md-4">
+                <label class="col-form-label">Effective End Date</label>
+                <div>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+              <div class="form-group form-group-sm col-md-4">
+                <label for="City" class="col-form-label">Slide Type</label>
+                <div>
+                  <select class="form-control" id="sel1" name="sellist1" (change)="presentationOnChange($event.target.value)" >
+                    <option>Element Non Asset</option>
+                    <option value="ElementAsset">Element Asset</option> <!--show the 2nd div-->
+                    <option>Non Element</option>
+                    <option>Promotional Item</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--2nd pop up details-->
+        <div *ngIf="isElement" class="popup-conatiner" id="ElementAssetModal">
+            <img src="assets/Images/Foutain.png" class="rounded">
+            <div>
+              <button type="button" class="btn btn-danger btn-round-lg mr-2 mt-3 mb-3">
+                <i class="fa fa-plus"></i> Upload
+              </button>
+              <button type="button" class="btn btn-danger btn-round-lg mr-2 mt-3 mb-3" data-toggle="modal" data-target="#hotspotModal">Create Hotspots</button>
+              <button type="button" class="btn btn-danger btn-round-lg mt-3 mb-3" data-toggle="modal" data-target=".BrandModal">Map Brands</button>
+            </div>
+            <div class="border-dark border-bottom mb-2">
+              <h3>Fountain</h3>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label>
+                  <strong> Effective Start Date </strong>
+                </label>
+                <div>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label>
+                  <strong> Effective End Date </strong>
+                </label>
+                <div>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label>
+                  <strong> Slide Type </strong>
+                </label>
+                <div>
+                  <select class="form-control">
+                    <option>Element Asset</option>
+                    <option>Element Non Asset</option>
+                    <option>Non Element</option>
+                    <option>Promotional Item</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>
+                  <strong>Equipment Type</strong>
+                </label>
+                <div>
+                  <select class="form-control">
+                    <option>Vender</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label>
+                  <strong> Equipment Sub Type </strong>
+                </label>
+                <div>
+                  <select class="form-control">
+                    <option>Glass Font Vender (5x9)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>
+                  <strong>Equipment Group</strong>
+                </label>
+                <div>
+                  <select class="form-control">
+                    <option>Large Capacity Glass Front</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label>
+                  <strong>Brand Market</strong>
+                </label>
+                <div>
+                  <select class="form-control">
+                    <option>Standard</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label>
+                  <strong> Accessories</strong>
+                </label>
+                <div>
+                  <select class="form-control">
+                    <option>Credit Card Reader</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>
+                  <strong> Tags </strong>
+                </label>
+                <div>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 mb-4">
+              <h3>
+                Brands
+                <span class="text-danger"> Edit</span>
+              </h3>
+            </div>
+            <div class="row mt-3 mb-3">
+              <div class="col-md-3">
+                <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+                <span class="small">Add Brand</span>
+              </div>
+              <div class="col-md-3">
+                <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+                <span class="small">Add Brand</span>
+              </div>
+              <div class="col-md-3">
+                <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+                <span class="small">Add Brand</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+                <span class="small">Add Brand</span>
+              </div>
+              <div class="col-md-3">
+                <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+                <span class="small">Add Brand</span>
+              </div>
+              <div class="col-md-3">
+                <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle">
+                <span class="small">Add Brand</span>
+              </div>
+            </div>
+            <div class="btn-group mr-2 float-right">
+                <button type="button" class="btn btn-lg btn-outline-dark">Save</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Brand Mapping-->
+<div class="modal fade BrandModal">
+  <div class="modal-dialog" style="max-width: 1150px;">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="popup-conatiner">
+          <div class="row">
+            <div class="col-md-10 my-3">
+              <h3>Assign Product Layout</h3>
+            </div>
+            <div class="col-md-2 my-4 float-right text-danger">
+              <a href="#">Reset all</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card mr-2" style="width: 350px">
+              <div class="card-body mx-3 my-2 bg-light">
+                <table>
+                  <tr>
+                    <th rowspan="2">
+                      <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle mr-2">
+                    </th>
+                    <td>
+                      <span class="small card-text">120Z PET LS24 SPRITE</span>
+                    </td>
+                    <th rowspan="2">
+                      <span class="ml-5">...</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="small card-title">
+                        <strong> Vender Rate: $1.50 </strong>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card-body mx-3 my-1 bg-light">
+                <table>
+                  <tr>
+                    <th rowspan="2">
+                      <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle mr-2">
+                    </th>
+                    <td>
+                      <span class="small card-text">120Z PET LS24 SPRITE</span>
+                    </td>
+                    <th rowspan="2">
+                      <span class="ml-5">...</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="small card-title">
+                        <strong> Vender Rate: $1.50 </strong>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card-body mx-3 my-1 bg-light">
+                <table>
+                  <tr>
+                    <th rowspan="2">
+                      <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle mr-2">
+                    </th>
+                    <td>
+                      <span class="small card-text">120Z PET LS24 SPRITE</span>
+                    </td>
+                    <th rowspan="2">
+                      <span class="ml-5">...</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="small card-title">
+                        <strong> Vender Rate: $1.50 </strong>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card-body mx-3 my-1 bg-light">
+                <table>
+                  <tr>
+                    <th rowspan="2">
+                      <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle mr-2">
+                    </th>
+                    <td>
+                      <span class="small card-text">120Z PET LS24 SPRITE</span>
+                    </td>
+                    <th rowspan="2">
+                      <span class="ml-5">...</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="small card-title">
+                        <strong> Vender Rate: $1.50 </strong>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card-body mx-3 my-1 bg-light">
+                <table>
+                  <tr>
+                    <th rowspan="2">
+                      <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle mr-2">
+                    </th>
+                    <td>
+                      <span class="small card-text">120Z PET LS24 SPRITE</span>
+                    </td>
+                    <th rowspan="2">
+                      <span class="ml-5">...</span>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="small card-title">
+                        <strong> Vender Rate: $1.50 </strong>
+                      </span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="card" style="width: 700px">
+              <div class="card-body row">
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+                <div class="mx-1 my-1 border">
+                  <img src="assets/Images/SlideImg.png" width="60px" height="55px" class="rounded-circle my-5 mx-2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn-group mr-2 mt-2 float-right pull-md-5">
+          <button type="button" class="btn btn-lg btn-outline-dark">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Create Hotspot -->
+<div class="modal" id="hotspotModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body jumbotron" style="margin: 10px">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="assets/Images/CokeEquip.png" class="w-100 ">
+          </div>
+          <div class="col-md-6">
+            <h1>Product Vender </h1>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+            aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+            nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat...
+          </div>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer d-inline">
+        <button type="button" class="btn btn-danger float-left" data-dismiss="modal">New Hotspot</button>
+        <button type="button" class="btn btn-outline-dark float-right" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Link Hotspot-->
+<div class="modal" id="linkHotspot">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <form>
+          <div class="form-group has-search">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <!-- <input type="text" class="form-control" placeholder="Search">
+            <span class="fa fa-search form-control-feedback"></span> -->
+          </div>
+          <select multiple class="form-control" id="sel2" name="sellist2">
+            <option>Slide 1</option>
+            <option>Slide 2</option>
+            <option>Slide 3</option>
+            <option>Slide 4</option>
+            <option>Slide 5</option>
+          </select>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer d-inline">
+        <button type="button" class="btn btn-danger float-left" data-dismiss="modal">Remove</button>
+        <button type="button" class="btn btn-danger float-right" data-dismiss="modal">Done</button>
+      </div>
+    </div>
+  </div>
+</div>

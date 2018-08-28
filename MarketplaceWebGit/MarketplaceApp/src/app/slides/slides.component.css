@@ -1,0 +1,19 @@
+.popup-conatiner{
+margin: 0 40px;
+}
+
+.overflow-y{
+height: 700px;
+overflow-y: scroll;
+}
+
+.modal-open .modal{
+    overflow-y: hidden;
+}
+.pagination {
+    display: flex;
+    padding-left: 0px;
+    list-style: none;
+    border-radius: 0.25rem;
+    justify-content: center;
+}

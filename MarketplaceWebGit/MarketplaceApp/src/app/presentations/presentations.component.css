@@ -1,0 +1,14 @@
+
+.pagination {
+    display: flex;
+    padding-left: 0px;
+    list-style: none;
+    border-radius: 0.25rem;
+    justify-content: center;
+}
+
+
+ .pagination>li.active>a {
+    background: #000000;
+    color: #fff;
+  } 

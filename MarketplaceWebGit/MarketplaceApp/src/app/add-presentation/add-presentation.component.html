@@ -1,0 +1,556 @@
+<div class="row" *ngIf="presentationType===undefind">
+  <div class="col-sm">
+    <input type="text" class="form-control sm-2 h1" aria-label="Default" placeholder="Presentation Name">
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group mr-3" role="group">
+        <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="modal" data-target="#presentationTypeModal">Presentation Type</button>
+      </div>
+      <div class="btn-group ml-3" role="group">
+        <button type="button" class="btn btn-sm btn-outline-dark">Effective Dates</button>
+      </div>
+    </div>
+  </div>
+  <div class="full-height"></div>
+  <div class="col-sm">
+    <div class="">
+      <h4 class="d-inline p-2">Zones</h4>
+      <button type="button" class="btn bg-red-color text-white float-right d-inline">
+        <i class="fa fa-plus"></i> Add New
+      </button>
+    </div>
+  </div>
+</div>
+<div class="row" id="Welcome" *ngIf="presentationType==='Welcome'">
+  <div class="col-sm border-right">
+    <div class="row">
+      <div class="h1 col-md-10">Welcome</div>
+      <div>
+        <i class="fa fa-mobile-phone text-danger" style="font-size: 48px"></i>Preview
+      </div>
+    </div>
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group mr-2 mt-3" role="group">
+        <button type="button" class="btn btn-secondary">Welcome</button>
+      </div>
+      <div class="btn-group ml-2 mt-3" role="group">
+        <button type="button" class="btn btn-secondary">Jun 22 - Jun 25</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="">
+      <h4 class="d-inline p-2">Zones</h4>
+      <button type="button" class="btn bg-red-color text-white float-right d-inline">
+        <i class="fa fa-plus"></i> Add New
+      </button>
+      <div class="mr-2 mt-4">
+        <a routerLink="/home/zone-details">
+          <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+            </div>
+            <div class="col-md-5 py-3">
+              <h5 class="card-text">Why Coke</h5>
+            </div>
+            <div class="col-md-3 py-3">
+              <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+            </div>
+          </div>
+        </a>
+        <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+          <div class="col-md-3">
+            <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+          </div>
+          <div class="col-md-5 py-3">
+            <h5 class="card-text">Business Stats</h5>
+          </div>
+          <div class="col-md-3 py-3">
+            <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+          </div>
+        </div>
+        <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+          <div class="col-md-3">
+            <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+          </div>
+          <div class="col-md-5 py-3">
+            <h5 class="card-text">Our Company</h5>
+          </div>
+          <div class="col-md-3 py-3">
+            <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="row" id="CommercialPlan" *ngIf="presentationType==='Commercial Plan'">
+  <div class="col-sm border-right">
+    <div class="row">
+      <div class="h1 col-md-10">FSR Family Restaurant</div>
+      <div>
+        <i class="fa fa-mobile-phone text-danger" style="font-size: 48px"></i>Preview
+      </div>
+    </div>
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group mr-2 mt-3" role="group">
+        <button type="button" class="btn btn-secondary">Commercial Plan</button>
+      </div>
+      <div class="btn-group ml-2 mt-3" role="group">
+        <button type="button" class="btn btn-secondary">Jun 22 - Jun 25</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="">
+      <h4 class="d-inline p-2">Zones</h4>
+      <button type="button" class="btn bg-red-color text-white float-right d-inline">
+        <i class="fa fa-plus"></i> Add New
+      </button>
+      <div class="mr-2 my-4">
+        <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+          <div class="col-md-3">
+            <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+          </div>
+          <div class="col-md-5 py-3">
+            <h5 class="card-text">Entrance</h5>
+          </div>
+          <div class="col-md-3 py-3">
+            <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5" data-toggle="modal" data-target=".CommericalPlans">Copy</button>
+          </div>
+        </div>
+        <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+          <div class="col-md-3">
+            <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+          </div>
+          <div class="col-md-5 py-3">
+            <h5 class="card-text">Takeout Zone</h5>
+          </div>
+          <div class="col-md-3 py-3">
+            <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+          </div>
+        </div>
+        <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+          <div class="col-md-3">
+            <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+          </div>
+          <div class="col-md-5 py-3">
+            <h5 class="card-text">Table Zone</h5>
+          </div>
+          <div class="col-md-3 py-3">
+            <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+          </div>
+        </div>
+      </div>
+      <h5>Select Zone Hotspots Slide</h5>
+      <img src="assets/Images/Upload.jpg" class="rounded w-50" alt="Upload">
+      <div class="btn-toolbar" role="toolbar">
+        <div class="btn-group mr-2" role="group">
+          <button type="button" class="btn btn-round-lg bg-red-color text-white d-inline p-2 btn-sm my-3">
+            <i class="fa fa-plus"></i> Upload
+          </button>
+        </div>
+        <div class="btn-group mr-2" role="group">
+          <button type="button" class="btn btn-round-lg bg-red-color text-white d-inline p-2 btn-sm my-3">Create Hotspots</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Resouce" *ngIf="presentationType==='Resource'">
+  <div class="col-sm border-right">
+    <div class="row">
+      <div class="h1 col-md-10">Equipment</div>
+      <div>
+        <i class="fa fa-mobile-phone text-danger" style="font-size: 48px"></i>Preview
+      </div>
+    </div>
+    <div class="btn-toolbar" role="toolbar">
+      <div class="btn-group mr-2 mt-3" role="group">
+        <button type="button" class="btn btn-secondary">Resource</button>
+      </div>
+      <div class="btn-group ml-2 mt-3" role="group">
+        <button type="button" class="btn btn-secondary">Jun 22 - Jun 25</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div>
+      <h4 class="d-inline p-2">Zones</h4>
+      <button type="button" class="btn bg-red-color text-white float-right d-inline">
+        <i class="fa fa-plus"></i> Add New
+      </button>
+      <div class="mr-2 mt-4">
+        <div class="row">
+          <div class="ml-2 my-5">
+            <span>
+              <i class="fa fa-align-justify"></i>
+            </span>
+          </div>
+          <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+            </div>
+            <div class="col-md-5 py-3">
+              <h5 class="card-text">Venders</h5>
+            </div>
+            <div class="col-md-3 py-3">
+              <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ml-2 my-5">
+            <span>
+              <i class="fa fa-align-justify"></i>
+            </span>
+          </div>
+          <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+            </div>
+            <div class="col-md-5 py-3">
+              <h5 class="card-text">Venders</h5>
+            </div>
+            <div class="col-md-3 py-3">
+              <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ml-2 my-5">
+            <span>
+              <i class="fa fa-align-justify"></i>
+            </span>
+          </div>
+          <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+            </div>
+            <div class="col-md-5 py-3">
+              <h5 class="card-text">Venders</h5>
+            </div>
+            <div class="col-md-3 py-3">
+              <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ml-2 my-5">
+            <span>
+              <i class="fa fa-align-justify"></i>
+            </span>
+          </div>
+          <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+            </div>
+            <div class="col-md-5 py-3">
+              <h5 class="card-text">Venders</h5>
+            </div>
+            <div class="col-md-3 py-3">
+              <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="ml-2 my-5">
+            <span>
+              <i class="fa fa-align-justify"></i>
+            </span>
+          </div>
+          <div class="row card-body mx-3 my-1 shadow bg-light rounded">
+            <div class="col-md-3">
+              <img src="assets/Images/SlideImg.png" width="60px" height="55px">
+            </div>
+            <div class="col-md-5 py-3">
+              <h5 class="card-text">Venders</h5>
+            </div>
+            <div class="col-md-3 py-3">
+              <button type="button" class="btn btn-sm btn-outline-dark px-4 ml-5">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="presentationTypeModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="custom-controls-stacked">
+          <div class="form-check">
+            <div class="form-check-label" *ngFor="let option of Presentation">
+              <label class="cursor-pointer"><input type="radio" name="price" (click)="getValue(option.id)" [checked]="option.id == selectedOption.id" value={{option.id}} /> {{option.name}}</label>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-link float-right text-danger" (click)="ViewPresentationType()" data-dismiss="modal">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Commercial Plans-->
+<div class="modal fade CommericalPlans" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" style="max-width: 950px;">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="header-title">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <div class="row">
+          <div class="col-md-4">
+            <h1 class="d-inline">Presentations</h1>
+          </div>
+          <div class="col-md-3 mt-2">
+          <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+              </div>
+              <input type="text" class="form-control" placeholder="Search" aria-label="" aria-describedby="basic-addon1">
+            </div>
+            </div>
+            </div>
+        </div>
+        <br />
+        <div class="btn-toolbar float-left" role="toolbar">
+          <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-outline-dark btn-sm">Name</button>
+          </div>
+          <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-outline-dark btn-sm">Presentation Type</button>
+          </div>
+          <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-outline-dark btn-sm">Date</button>
+          </div>
+          <div class="btn-group mr-2" role="group">
+            <button type="button" class="btn btn-outline-dark btn-sm">Other Filters</button>
+          </div>
+        </div>
+        <div>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs float-right">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home">
+                <i class="fa fa-th-list" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu1">
+                <i class="fa fa-th-large" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="home" class="tab-pane active">
+              <table class="table" width="100%">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Presentation Type</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row"><i class="fa fa-image"></i> Presentation 1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td class="float-right mr-4">
+                      <input type="radio" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><i class="fa fa-image"></i> Presentation 2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td class="float-right mr-4">
+                        <input type="radio" />
+                      </td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><i class="fa fa-image"></i> Presentation 3</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td class="float-right mr-4">
+                        <input type="radio" />
+                      </td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><i class="fa fa-image"></i> Presentation 4</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td class="float-right mr-4">
+                        <input type="radio" />
+                      </td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><i class="fa fa-image"></i> Presentation 5</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td class="float-right mr-4">
+                        <input type="radio" />
+                      </td>
+                  </tr>
+                  <tr>
+                    <td scope="row"><i class="fa fa-image"></i> Presentation 6</td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td class="float-right mr-4">
+                        <input type="radio" />
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="modal-footer d-inline">
+                  <button type="button" class="btn btn-outline-dark float-right mr-3 px-4" data-dismiss="modal">Save</button>
+                  <button type="button" class="btn btn-outline-dark float-right mr-3 px-4" data-dismiss="modal">Cancel</button>
+                </div>
+                </div>
+            <div id="menu1" class="tab-pane fade">
+              <table class="table" width="100%">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Slides Type</th>
+                    <th scope="col">Equipment Type</th>
+                    <th scope="col">Equipment Sub Type</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+              </table>
+              <div class="row ml-1 text-center text-lg-left">
+                <div class="col-md-4 mb-3">
+                  <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+                  <div class="caption ml-2">
+                    <h4>Presentation 1</h4>
+                    <p>
+                      <i class="fa fa-clock-o mr-1"></i><small> Effective: 10/12/2018 - 10/12/2018 </small>
+                    </p>
+                    <!-- <div class="row ml-1">
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                      </div>
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+                  <div class="caption ml-2">
+                    <h4>Presentation 1</h4>
+                    <p>
+                      <i class="fa fa-clock-o mr-1"></i><small> Effective: 10/12/2018 - 10/12/2018 </small>
+                    </p>
+                    <!-- <div class="row ml-1">
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                      </div>
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+                  <div class="caption ml-2">
+                    <h4>Presentation 1</h4>
+                    <p>
+                      <i class="fa fa-clock-o mr-1"></i><small> Effective: 10/12/2018 - 10/12/2018 </small>
+                    </p>
+                    <!-- <div class="row ml-1">
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                      </div>
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+                  <div class="caption ml-2">
+                    <h4>Presentation 1</h4>
+                    <p>
+                      <i class="fa fa-clock-o mr-1"></i><small> Effective: 10/12/2018 - 10/12/2018 </small>
+                    </p>
+                    <!-- <div class="row ml-1">
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                      </div>
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+                  <div class="caption ml-2">
+                    <h4>Presentation 1</h4>
+                    <p>
+                      <i class="fa fa-clock-o mr-1"></i><small> Effective: 10/12/2018 - 10/12/2018 </small>
+                    </p>
+                    <!-- <div class="row ml-1">
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                      </div>
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <img class="img-fluid rounded w-75" src="assets/Images/SlideImg.png" alt="">
+                  <div class="caption ml-2">
+                    <h4>Presentation 1</h4>
+                    <p>
+                      <i class="fa fa-clock-o mr-1"></i><small> Effective: 10/12/2018 - 10/12/2018 </small>
+                    </p>
+                    <!-- <div class="row ml-1">
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-secondary btn-sm">Edit</button>
+                      </div>
+                      <div class="mr-2">
+                        <button type="button" class="btn btn-danger bg-red-color btn-sm">Delete</button>
+                      </div>
+                      <button type="button" class="btn btn-outline-dark btn-sm">Duplicate</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer d-inline">
+                  <button type="button" class="btn btn-outline-dark float-right mr-3 px-4" data-dismiss="modal">Save</button>
+                  <button type="button" class="btn btn-outline-dark float-right mr-3 px-4" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</div>

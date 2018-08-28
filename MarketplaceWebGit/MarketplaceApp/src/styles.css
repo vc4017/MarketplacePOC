@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.bg-red-color{
+    background: #CE2F30;
+}
+.header-title > * {
+  vertical-align: text-bottom;
+}
+
+.btn-round-lg {
+  border-radius: 10px;
+}
+
+.btn-toolbar > button {
+  border-radius: 5px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
